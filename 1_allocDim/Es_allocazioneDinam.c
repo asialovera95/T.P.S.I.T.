@@ -14,6 +14,9 @@ main(){
     printf("quanti elementi vuoi: \n");
     scanf("%d", &n);
 
+    //malloc chiede al sistema di allocare un'area di memoria della dimensione specificata
+    //restituisce l'indirizzo di area di memoria allocata
+    //se l'allocazione non è possibile restituisce NULL
     int *p = malloc(n*sizeof(int);
 
     for(int i=0; i<n; i++){
@@ -28,5 +31,5 @@ main(){
         k++;
     }
 
-    printf("Il masssimo dei numeri e': %d ",max);
+    printf("Il massimo dei numeri e': %d ",max);
 }
