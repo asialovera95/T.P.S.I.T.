@@ -29,7 +29,7 @@ int main()
 	char *field;	//puntattore al primo char trovato
 	int Rank;
 	struct table data[NDATA];
-	int counter = 0;
+	int counter = 0; //conta le righe
 
 	f = fopen(filename,"r");
 	if( f == NULL)
@@ -48,7 +48,8 @@ int main()
 	restituisce il numero convertito come intero
 	se non può eseguire nessuna conversione, restituisce zero
 	*/
-
+	
+	// la while legge fino a quando sono presenti righe nel file
 	while(fgets(buffer,BSIZE,f))
 	{
 		field=strtok(buffer,",");
