@@ -70,7 +70,7 @@ void ordinaLista(ListaDiElementi l) {
     tmp = l1; 
     prec_tmp = l; 
 
-    //l’ordine delle condizioni in && e’ importante!
+    //l’ordine delle condizioni in && 
     while ((tmp!=NULL)&&(tmp->info <l->info)) { 
         prec_tmp=tmp; 
         tmp=tmp->next; 
