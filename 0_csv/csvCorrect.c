@@ -26,7 +26,7 @@ int main()
 	char filename[] = "vgsales.csv";
 	char buffer[BSIZE];
 	FILE *f;
-	char *field;
+	char *field;	//puntattore al primo char trovato
 	int Rank;
 	struct table data[NDATA];
 	int counter = 0;
@@ -37,6 +37,17 @@ int main()
 		printf("Unable to open file '%s'\n",filename);
 		exit(1);
 	}
+	
+	/*strtok()
+	Rompe la stringa in una serie di char utilizzando un separatore
+	Restituisce un puntatore al primo char trovato
+	Viene restituito un puntatore NULL se non sono presenti char
+	
+	atoi()
+	converte la stringa in un int
+	restituisce il numero convertito come intero
+	se non può eseguire nessuna conversione, restituisce zero
+	*/
 
 	while(fgets(buffer,BSIZE,f))
 	{
