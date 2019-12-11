@@ -5,4 +5,4 @@ Contenuto:
   _Esercizio sul csv_
   _Esercizio per l'allocazione dinamica_
   _Esercizi sulle liste (dall'1 al 6)_
-  _Esercizi sulle pile (dall'1 al 2)_
+  
